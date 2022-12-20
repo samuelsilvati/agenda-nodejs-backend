@@ -1,0 +1,70 @@
+<%- include('includes/head')%>
+
+    <div class="body contact">
+      <h1>Contatos</h1>
+      <h2>Crie ou edite seus contatos</h2>
+      <div class="block">
+        <% if(contato._id){ %>
+          <form class="form-contato form" action="/contato/edit/<%= contato._id%> " method="POST">
+            <% } else { %>
+              <form class="form-contato form" action="/contato/register" method="POST">
+                <% } %>
+                  <input type="hidden" name="_csrf" value=<%=csrfToken %>>
+        
+                  <label class="form-label">Nome</label>
+                  <input value="<%= contato.nome %>" type="text" class="form-control" name="nome">
+        
+                  <label class="form-label">Sobrenome</label>
+                  <input value="<%= contato.sobrenome %>" type="text" class="form-control" name="sobrenome">
+        
+        
+                  <label class="form-label">E-mail</label>
+                  <input value="<%= contato.email %>" type="email" class="form-control" name="email">
+        
+        
+                  <label class="form-label">Telefone</label>
+                  <input value="<%= contato.telefone %>" type="tel" class="form-control" name="telefone">
+          <button>Salvar contato</button>
+          <% if(contato._id){ %>
+              <button class="delete"><a href="/contato/delete/<%= contato._id %> ">Excluir contato</a></button>
+              <% }  %>
+          
+          <%- include('includes/messages') %>
+            <div class="messages"></div>
+
+            <a href="/contatos/index" class="back-button">Voltar</a>
+
+        </form>
+      </div>
+    </div>
+
+    <!-- <div class="block">
+      <% if(contato._id){ %>
+        <form class="form-contato form" action="/contato/edit/<%= contato._id%> " method="POST">
+          <% } else { %>
+            <form class="form-contato form" action="/contato/register" method="POST">
+              <% } %>
+                <input type="hidden" name="_csrf" value=<%=csrfToken %>>
+
+                <label class="form-label">Nome</label>
+                <input value="<%= contato.nome %>" type="text" class="form-control" name="nome">
+
+                <label class="form-label">Sobrenome</label>
+                <input value="<%= contato.sobrenome %>" type="text" class="form-control" name="sobrenome">
+
+
+                <label class="form-label">E-mail</label>
+                <input value="<%= contato.email %>" type="email" class="form-control" name="email">
+
+
+                <label class="form-label">Telefone</label>
+                <input value="<%= contato.telefone %>" type="tel" class="form-control" name="telefone">
+
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </form>
+
+    </div>
+ -->
+
+
+    <%- include('includes/footer')%>

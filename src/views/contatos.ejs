@@ -1,0 +1,55 @@
+<%- include('includes/head')%>
+  <div class="body contact">
+    <h1>Contatos</h1>
+    <h2>Crie ou edite seus contatos</h2>
+    <div class="block">
+      <h3>Seus contatos</h3>
+      <div class="content">
+        <div class="search">
+          <input class="search-text" type="search" placeholder="Pesquisar">
+          <!-- <a href="">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.79688 11.7188C9.51515 11.7188 11.7188 9.51515 11.7188 6.79688C11.7188 4.0786 9.51515 1.875 6.79688 1.875C4.0786 1.875 1.875 4.0786 1.875 6.79688C1.875 9.51515 4.0786 11.7188 6.79688 11.7188Z"
+                  stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10.2773 10.2773L13.125 13.125" stroke="black" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a> -->
+        </div>
+        <div class="contacts">
+          <% if(contatos.length> 0) { %>
+            <table class="table table-hover">
+              <% contatos.forEach(contato=> { %>
+                <tr onclick="location.href='/contato/index/<%= contato._id %>'">
+                  <td>
+                    <div class="circle">
+                      <p>
+                        <%= contato.nome.charAt(0) %>
+                      </p>
+                    </div>
+                  </td>
+                  <td>
+                    <p>
+                      <%= contato.nome %>
+                    </p>
+                  </td>
+                </tr>
+                <% }) %>
+
+            </table>
+            
+            <% } else { %>
+              <p class="error">Não existem contatos na sua agenda</p>
+              <% } %>
+
+        </div>
+        <div class="teste"></div>
+        <a href="/login/logout" class="back-button">Sair</a>
+        <a href="/contato/index" class="add-contact">Adicionar contato</a>
+
+      </div>
+    </div>
+  </div>
+
+  <%- include('includes/footer')%>

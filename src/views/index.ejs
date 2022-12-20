@@ -1,0 +1,27 @@
+<%- include('includes/head')%>
+  <div class="body">
+    <h1>Agenda</h1>
+    <div class="block">
+      <p>Fazer login</p>
+      <a href="/register/index">
+        <div class="register">
+          <p>Cadastro</p>
+        </div>
+      </a>
+      <form class="form-login form" action="/login/login" method="post">
+        <input type="hidden" name="_csrf" value=<%=csrfToken %>>
+        <label for="email">Endereço de e-mail</label>
+        <input type="email" class="form-control" name="email">
+        <label for="password">Senha</label>
+        <input type="password" class="form-control" name="password">
+        <button type="submit">Fazer login</button>
+        <p>Crie uma agenda e guarde seus contatos</p>
+        <!-- <a href="contatos.html">CONTATOS</a> -->
+        <%- include('includes/messages') %>
+        
+          <div class="login-error"></div>
+      </form>
+      
+    </div>
+  </div>
+  <%- include('includes/footer')%>
