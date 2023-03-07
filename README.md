@@ -1,5 +1,5 @@
 <h1 align="center">
-  Relógio Interativo
+  Agenda
 </h1>
 
 <p align="center">
@@ -21,7 +21,7 @@
 
 ## ✨ Tecnologias
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+Projeto em desenvolvimento com as seguintes tecnologias:
 
 - HTML
 - CSS
@@ -37,7 +37,7 @@ API de agenda desenvolvida em NodeJs e MongoDB. O usuário pode criar um cadastr
 
 #### `123456`
 
-Depois de logado o usuario pode alterar os contatos ou criar novos.<br>
+Depois de logado, o usuario pode alterar os contatos ou criar novos.<br>
 O deploy do projeto foi feito no https://render.com
 
 ## 🚀 Link do Projeto
