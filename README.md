@@ -38,14 +38,21 @@ Projeto em desenvolvimento com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-API de agenda desenvolvida em NodeJs e MongoDB. O usuário pode criar um cadastro na agenda, fazer login com os seguintes dados:
+API de agenda desenvolvida em NodeJs e MongoDB, que permite ao usuário criar um cadastro na agenda para armazenar seus contatos. Os seguintes dados podem ser usado para teste:
+
+login:
 
 #### `teste0@gmail.com`
 
+senha:
+
 #### `123456`
 
-Depois de logado, o usuario pode alterar os contatos ou criar novos.<br>
-O deploy do projeto foi feito no https://render.com
+Após o cadastro, o usuário pode fazer login e ter acesso aos seus contatos armazenados na agenda. Além disso, o usuário pode criar novos contatos ou alterar os existentes, de forma simples e intuitiva.
+
+Para hospedar a aplicação, foi utilizado o https://render.com, um serviço de hospedagem em nuvem que oferece alta escalabilidade e desempenho para aplicações web. Com essa solução, a API de agenda pode ser acessada de qualquer lugar, a qualquer hora, garantindo praticidade e eficiência para o usuário.
+
+Aviso: Por usar o plano gratuito do render, o primeiro acesso pode demorar um pouco.
 
 ## 🚀 Link do Projeto
 
