@@ -19,6 +19,13 @@
   <a href="https://agenda-nodejs.onrender.com"><img alt="thumbnail" src="./.github/thumbnail0.jpg" width="100%"></a>
 </p>
 
+<p align="center">
+  <a href="https://agenda-nodejs.onrender.com"><img alt="thumbnail" src="./.github/thumbnail1.jpg" width="100%"></a>
+</p>
+<p align="center">
+  <a href="https://agenda-nodejs.onrender.com"><img alt="thumbnail" src="./.github/thumbnail2.jpg" width="100%"></a>
+</p>
+
 ## ✨ Tecnologias
 
 Projeto em desenvolvimento com as seguintes tecnologias:
